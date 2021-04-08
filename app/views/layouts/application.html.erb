@@ -11,8 +11,13 @@
   </head>
 
   <body>
+
+    <p>
+      <%= flash.notice %>
+    </p>
+
     <nav>
-      <%= link_to "Cadastre-se", "/user/new'" %>
+      <%= link_to "Cadastre-se", "/users/new" %>
     </nav>
     <%= yield %>
   </body>

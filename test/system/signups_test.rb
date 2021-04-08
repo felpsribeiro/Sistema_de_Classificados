@@ -8,7 +8,7 @@ class SignupsTest < ApplicationSystemTestCase
     fill_in "Nome", with: "Darth"  #preencha o campo Nome com Darth
     fill_in "E-mail", with: "darth@imperio.com"
     fill_in "Senha", with: "minhasenha"
-    fill_in "Confirme sua senha", with: "minhasenha"
+    fill_in "Confirmação da senha", with: "minhasenha"
     
     click_on "Cadastrar"  #clique em Cadastrar
 
