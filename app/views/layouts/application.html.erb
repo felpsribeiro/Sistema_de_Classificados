@@ -17,7 +17,8 @@
     </p>
 
     <nav>
-      <%= link_to "Cadastre-se", "/users/new" %>
+      <%= link_to translate("menu.signup"), new_user_path %>
+      <%= link_to translate("menu.signin"), new_session_path %>
     </nav>
     <%= yield %>
   </body>

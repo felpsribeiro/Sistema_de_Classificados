@@ -1,0 +1,7 @@
+pt-BR:
+  sessions:
+    create:
+      welcome: "Bem vindo %{name}"
+  users:
+    create:
+      success: "Cadastro realizado com sucesso"
