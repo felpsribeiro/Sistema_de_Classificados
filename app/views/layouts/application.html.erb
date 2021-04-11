@@ -14,11 +14,17 @@
 
     <p>
       <%= flash.notice %>
+      <%= flash.alert %>
     </p>
 
     <nav>
-      <%= link_to translate("menu.signup"), new_user_path %>
-      <%= link_to translate("menu.signin"), new_session_path %>
+      <% if user_signed_in? %>
+        <%= button_to t("menu.logout"), sign_out_sessions_path, method: :delete %>
+        <%= link_to t("menu.new_ad"), new_ad_path %>
+      <% else %>
+        <%= link_to translate("menu.signup"), new_user_path %>
+        <%= link_to translate("menu.signin"), new_session_path %>
+      <% end %>
     </nav>
     <%= yield %>
   </body>

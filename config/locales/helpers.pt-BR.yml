@@ -5,3 +5,5 @@ pt-BR:
       user:
         create: "Cadastrar"
         update: "Atualizar"
+      ad:
+        create: "Criar"
